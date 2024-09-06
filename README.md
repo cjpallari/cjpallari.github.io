@@ -1,1 +1,1 @@
-# cjpallari.github.io
+# CSC 193A course work
