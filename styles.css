@@ -1,0 +1,19 @@
+#header ul{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    height: 40px;
+}
+
+#header li{
+    margin-right: 20px;
+}
+
+#new_fancy{
+font-family: Papyrus, fantasy;
+font-size: 100px;
+color: #333;
+}
