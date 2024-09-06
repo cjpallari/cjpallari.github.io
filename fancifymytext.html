@@ -3,18 +3,49 @@
   <head>
     <title>Fancify Shamcify</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- link to your script file here -->
   </head>
 
   <body>
     <h1>Fancify my Text</h1>
-    <form>
-      <label for="textbox">Enter text:</label>
-      <input type="text" id="fancy_text" name="textbox" />
-    </form>
-    <!-- Your UI controls go here -->
 
     <button id="fancy_button" type="button">FANCIFY</button>
+
+    <form>
+      <!-- Fieldset for Text Area -->
+      <fieldset>
+        <legend>Text</legend>
+        <textarea id="text" rows="4" cols="30"></textarea>
+      </fieldset>
+
+      <!-- Fieldset for Controls -->
+      <fieldset>
+        <legend>Fancify</legend>
+        <div class="form-controls">
+          <button id="bigger_button" type="button">Bigger!</button>
+          <button id="moo_button" type="button">Moo!</button>
+        </div>
+        <div class="radio-buttons">
+          <label>
+            <input
+              id="shmancy_button"
+              type="radio"
+              name="fancy"
+              value="fancyShmancy"
+            />
+            FancyShmancy
+          </label>
+          <label>
+            <input
+              id="boring_betty_button"
+              type="radio"
+              name="fancy"
+              value="boringBetty"
+            />
+            BoringBetty
+          </label>
+        </div>
+      </fieldset>
+    </form>
     <script src="scripts.js"></script>
   </body>
 </html>
