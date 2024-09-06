@@ -17,3 +17,7 @@
 font-size: 24pt;
 color: #333;
 }
+
+fieldset{
+    border: none;
+}

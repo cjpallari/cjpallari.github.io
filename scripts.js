@@ -32,14 +32,12 @@ moo.onclick = function(){
     let moo_text = document.getElementById("new_fancy");
     let moo_content = moo_text.innerHTML;
     moo_text.style.textTransform = "uppercase";
-    let sentence = moo_content.split(".");
+    let sentence = moo_content.split("."); //Split on periods
     for (let i = 0; i < sentence.length; i++){
-        sentence[i] = sentence[i].trim();
-        if (sentence[i] != ""){
-            sentence[i] += "-moo";
-        }
+        sentence[i] = sentence[i].trim(); //Trim white space
+            sentence[i] += "-moo"; //Append moo to the end of each element
 
     }
-    let new_text = sentence.join('. ').trim();
+    let new_text = sentence.join('. ').trim(); //Join each element on a period
     moo_text.innerHTML = new_text;
 }
